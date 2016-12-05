@@ -39,13 +39,29 @@
                 </a>
             </li>
             <li>
-                <a href="/tests2j">Full view</a>
+                <a href="#">Dashboard</a>
             </li>
-
+            <li>
+                <a href="#">Shortcuts</a>
+            </li>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
         </ul>
-        <div class="col-md-12">
-            <div id="s2j_embed_sidebar"></div>
-        </div>
+
+
     </div>
     <!-- /#sidebar-wrapper -->
 
@@ -57,8 +73,8 @@
                     <h1>Simple Sidebar</h1>
                     <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                     <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle to Sidebar</a>
+                    <br>
                     <ul>
                         <li>
                             <a href="/tests2j" class="btn btn-primary">Topics Embed</a>
@@ -70,18 +86,7 @@
                             <a href="#" class="btn btn-primary">Questions Embed</a>
                         </li>
                     </ul>
-                    <ul>
-                        <li>
-                            <a href="/tests2j/sidebar" class="btn btn-primary">Topics Embed</a>
-                        </li>
-                        <li>
-                            <a href="/tests2j/sidebarSubtopics.html" class="btn btn-primary">Sub-Topics Embed</a>
-                        </li>
-                        <li>
-                            <a href="/tests2j/sidebarQuestions.html" class="btn btn-primary">Questions Embed</a>
-                        </li>
-                    </ul>
-
+                    <div id="s2j_embed_full"></div>
                 </div>
             </div>
         </div>
@@ -101,18 +106,13 @@
 <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
-        window.location.href = '/tests2j';
-
+        window.location.href = '/tests2j/sidebar.html'
     });
 </script>
 <script type="text/javascript">
-    (function(w,d,s,u,o){w["S2jObject"]=o;w[o]=w[o]||function(){
-        (w[o].q=w[o].q||[]).push(arguments)},w[o].l=1*new Date();
-        var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);
-        js.src=u;fjs.parentNode.insertBefore(js,fjs);})
-    (window,document,"script","https://dev-s2j.pantheonsite.io/sites/all/themes/s2j_bootstrap/widget/widget.js","s2j");
-    s2j("ODIx","","","ZmFsc2U=","s2j_embed_sidebar");
+    (function(w,d,s,u,o){w["S2jObject"]=o;w[o]=w[o]||function(){(w[o].q=w[o].q||[]).push(arguments)},w[o].l=1*new Date();var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);js.src=u;fjs.parentNode.insertBefore(js,fjs);})(window,document,"script","https://dev-s2j.pantheonsite.io/sites/all/themes/s2j_bootstrap/widget/widget.js","s2j");s2j("ODIx","ODc1","OTU1MzE=","b24=","s2j_embed_full");
 </script>
+
 
 </body>
 
